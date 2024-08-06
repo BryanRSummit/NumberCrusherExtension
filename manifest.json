@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Number Crusher Extension",
+    "name": "Number Crusher",
     "version": "1.0",
     "description": "Scrapes phone numbers from the current tab and copies them to clipboard.",
     "permissions": [
