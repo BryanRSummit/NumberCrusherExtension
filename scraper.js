@@ -1,6 +1,8 @@
 function scrapePhoneNumbers() {
     //const phoneRegex = /\b\d{3}[-.]?\d{3}[-.]?\d{4}\b/g;
-    const phoneRegex = /(?:\+?1[-.\s]?)?(?:\(?[2-9]\d{2}\)?[-.\s]?)?[2-9]\d{2}[-.\s]?\d{4}/g;
+    //const phoneRegex = /(?:\+?1[-.\s]?)?(?:\(?[2-9]\d{2}\)?[-.\s]?)?[2-9]\d{2}[-.\s]?\d{4}/g;
+    const phoneRegex = /(?:\+?1[-.\s]?)?(?:\(?[2-9]\d{2}\)?[-.\s]?)?[2-9]\d{2}[-.\s]?\d{4}(?=\b)/g;
+
     const pageContent = document.body.innerText;
     const phoneNumbers = pageContent.match(phoneRegex) || [];
     
